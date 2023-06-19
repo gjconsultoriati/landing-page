@@ -1,43 +1,50 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../assets/logo.png'
+import { DialogComponent } from './DialogModal'
 import { Bars3Icon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 
-export function Header() {
+export const Header = () => {
+  const titles = ['Empresa', 'Serviço', 'Contato']
+  const [visibleModal, setVisibleModal] = useState(true)
+
+  function handleOpenModal() {
+    setVisibleModal(!visibleModal)
+  }
   return (
-    <header className="w-full h-22 flex items-center justify-end shadow shadow-lg bg-white ">
-      <div className="w-full flex items-center justify-between ml-10">
+    <header className="h-22 flex  w-full items-center justify-end  bg-white shadow-xl ">
+      <div className="ml-10 mr-10 flex w-full items-center justify-between">
         <Image
           src={Logo}
           width={200}
           height={200}
           alt="Logo GJ consultoria em T.I"
         />
-        <nav className="gap-2  m-10 space-x-40 flex-row w-[50%] items-center justify-center flex ">
-          <NavLinks title="Empresa" />
-          <NavLinks title="Contato" />
-          <NavLinks title="Serviços" />
-          <button>
-            <Bars3Icon className="w-6 h-6" />
-          </button>
-        </nav>
+        {titles.map((title) => (
+          <Link
+            key={title}
+            href=""
+            className="text-md relative font-text text-blue-600 hover:border-b-2 hover:border-b-blue-900 hover:font-bold  hover:text-blue-900 max-lg:hidden max-md:hidden max-sm:hidden"
+          >
+            <span className="transform transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+              {title}
+            </span>
+          </Link>
+        ))}
+      </div>
+      <div className="mr-10 lg:hidden">
+        <button onClick={handleOpenModal}>
+          <Bars3Icon className="h-10 w-10" />
+        </button>
+        <div className="absolute bottom-0 left-0 top-44 flex w-full items-center justify-center">
+          <DialogComponent
+            visibleModal={visibleModal}
+            openModal={handleOpenModal}
+            titles={titles}
+          />
+        </div>
       </div>
     </header>
-  )
-}
-
-type LinksProps = {
-  title: string
-}
-function NavLinks({ title }: LinksProps) {
-  return (
-    <Link
-      href=""
-      className="font-text hover:font-bold text-md text-blue-600 hover:border-b-blue-900 hover:border-b-2 hover:text-blue-900 "
-    >
-      <p className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 ">
-        {title}
-      </p>
-    </Link>
   )
 }
