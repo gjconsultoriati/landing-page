@@ -16,7 +16,7 @@ export function DialogComponent({
       <Dialog.Root open={visibleModal} onOpenChange={openModal}>
         <Dialog.Trigger asChild />
         <Dialog.Overlay />
-        <Dialog.Content className="animate-">
+        <Dialog.Content className="">
           {titles?.map((title) => (
             <Link
               key={title}

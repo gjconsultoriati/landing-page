@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../assets/logo.png'
-import { DialogComponent } from './DialogModal'
+import { DialogComponent } from '../DialogComponent'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
 
@@ -12,8 +12,9 @@ export const Header = () => {
   function handleOpenModal() {
     setVisibleModal(!visibleModal)
   }
+
   return (
-    <header className="h-22 flex  w-full items-center justify-end  bg-white shadow-xl ">
+    <header className="h-22 flex  w-full items-center justify-end  bg-white shadow-xl">
       <div className="ml-10 mr-10 flex w-full items-center justify-between">
         <Image
           src={Logo}
@@ -25,9 +26,9 @@ export const Header = () => {
           <Link
             key={title}
             href=""
-            className="text-md relative font-text text-blue-600 hover:border-b-2 hover:border-b-blue-900 hover:font-bold  hover:text-blue-900 max-lg:hidden max-md:hidden max-sm:hidden"
+            className="text-md  font-text text-blue-600  hover:border-b-blue-900 hover:font-bold  hover:text-blue-900 max-lg:hidden max-md:hidden max-sm:hidden"
           >
-            <span className="transform transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 ">
+            <span className="transform transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-b-2  hover:border-b-blue-900 ">
               {title}
             </span>
           </Link>
