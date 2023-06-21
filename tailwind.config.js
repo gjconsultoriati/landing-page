@@ -57,6 +57,7 @@ module.exports = {
           50: '#030007',
         },
       },
+
       fontFamily: {
         title: ['Exo2', 'sans-serif'],
         text: ['Lato', 'sans-serif'],
