@@ -1,5 +1,6 @@
 import { Company } from '@/components/Company '
 import { Header } from '@/components/Header/ '
+import { Services } from '@/components/Services '
 // import { TypeWrite } from '../components/TypeWriter'
 
 export default function App() {
@@ -11,8 +12,10 @@ export default function App() {
         <div>
           <Company />
         </div>
-
-        {/* component de Serviço aqui */}
+        <div>
+          {/* component de Serviço aqui */}
+          <Services />
+        </div>
       </main>
     </div>
   )
