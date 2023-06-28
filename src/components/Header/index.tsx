@@ -7,20 +7,21 @@ import { useState } from 'react'
 
 export const Header = () => {
   const titles = ['Empresa', 'Serviço', 'Contato']
-  const [visibleModal, setVisibleModal] = useState(true)
+  const [visibleModal, setVisibleModal] = useState(false)
 
   function handleOpenModal() {
     setVisibleModal(!visibleModal)
   }
 
   return (
-    <header className="h-22 flex  w-full items-center justify-end  bg-white shadow-xl">
+    <header className="flex h-24  w-full items-center justify-end border-b-2 border-gray-800  bg-white shadow-xl">
       <div className="ml-10 mr-10 flex w-full items-center justify-between">
         <Image
           src={Logo}
           width={200}
           height={200}
           alt="Logo GJ consultoria em T.I"
+          className="max-sm:h-30 max-sm:w-30 object-contain"
         />
         {titles.map((title) => (
           <Link
