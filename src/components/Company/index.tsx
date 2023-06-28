@@ -20,7 +20,7 @@ export function Company() {
           </h1>
         </div>
         <div className="max-sm:mt-28 max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-center">
-          <button className="text-lg font-bold text-blue-900 max-sm:rounded-lg max-sm:bg-white max-sm:px-16 max-sm:py-4 max-sm:hover:border  max-sm:hover:border-white max-sm:hover:bg-transparent max-sm:hover:text-white max-sm:hover:transition-all max-sm:hover:duration-500 max-sm:hover:ease-linear">
+          <button className="text-lg font-bold text-blue-900 max-sm:rounded-lg max-sm:bg-white max-sm:px-14 max-sm:py-4 max-sm:hover:border  max-sm:hover:border-white max-sm:hover:bg-transparent max-sm:hover:text-white max-sm:hover:transition-all max-sm:hover:duration-500 max-sm:hover:ease-linear">
             Quero Inovar !
           </button>
         </div>
