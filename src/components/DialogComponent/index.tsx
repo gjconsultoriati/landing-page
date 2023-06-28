@@ -12,7 +12,7 @@ export function DialogComponent({
   titles,
 }: DialogProps) {
   return (
-    <div className="flex w-[90%] items-center  justify-center rounded-2xl bg-white ">
+    <div className="flex w-[90%] items-center  justify-center rounded-2xl  bg-white">
       <Dialog.Root open={visibleModal} onOpenChange={openModal}>
         <Dialog.Trigger asChild />
         <Dialog.Overlay />
@@ -21,7 +21,7 @@ export function DialogComponent({
             <Link
               key={title}
               href=""
-              className="text-md  min-sm:hidden relative  font-text text-blue-600 hover:border-b-2 hover:border-b-blue-900  hover:font-bold hover:text-blue-900"
+              className="text-md  min-sm:hidden font-text  relative text-blue-600 hover:border-b-2 hover:border-b-blue-900  hover:font-bold hover:text-blue-900"
             >
               <p className="transform p-2 transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:border-b-2 hover:border-b-blue-900 ">
                 {title}

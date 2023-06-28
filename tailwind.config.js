@@ -19,6 +19,7 @@ module.exports = {
           200: '#0a1645',
           100: '#070f2e',
           50: '#030717',
+          10: '#64A4EC',
         },
         green: {
           900: '#d5e739',
@@ -59,8 +60,11 @@ module.exports = {
       },
 
       fontFamily: {
-        title: ['Exo2', 'sans-serif'],
-        text: ['Lato', 'sans-serif'],
+        exo2: ['Exo2', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+      },
+      animation: {
+        write: 'blink 5s infinite linear',
       },
     },
   },

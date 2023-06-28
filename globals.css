@@ -1,15 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Lato:wght@400;700&display=swap');
 
 body{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #e8e8e8
+  background-color: white;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Exo2', sans-serif;
+}
 
+span, strong, p {
+  font-family: 'Lato',  sa;
+}
+button {
+  cursor: pointer;
+}
 button {
   cursor: pointer;
 }
