@@ -10,14 +10,10 @@ export function Hero() {
           <h1 className="text-center font-exo2 text-xl font-bold text-white">
             Transforme suas ideias em realidades. Desenvolvimento de Aplicativos
             e Plataformas
-            <h1 className="font-lato text-3xl font-bold text-green-900">
-              <TypeWrite
-                strings={['Inovadoras_']}
-                autoStart={true}
-                loop={true}
-              />
-            </h1>
           </h1>
+          <h2 className="text-center font-lato text-3xl font-bold text-green-900">
+            <TypeWrite strings={['Inovadoras_']} autoStart={true} loop={true} />
+          </h2>
         </div>
         <Image
           src={CompanyImage}
