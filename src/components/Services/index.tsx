@@ -11,7 +11,7 @@ export function Services() {
         <h2 className="font-exo2 text-2xl font-bold max-sm:text-center">
           O que nós oferecemos
         </h2>
-        <div className="max-sm:mb-20 max-sm:mt-[4px] max-sm:flex max-sm:items-center max-sm:justify-center">
+        <div className="rounded max-sm:mb-20 max-sm:mt-[4px] max-sm:flex max-sm:items-center max-sm:justify-center">
           <div className="max-sm:w-[90%]  max-sm:border-b-2 max-sm:border-gray-900 max-sm:text-center" />
         </div>
       </div>
