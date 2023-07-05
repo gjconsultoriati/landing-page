@@ -1,4 +1,4 @@
-import { Company } from '@/components/Company '
+import { Hero } from '@/components/Hero '
 import { Header } from '@/components/Header/ '
 import { Services } from '@/components/Services '
 // import { TypeWrite } from '../components/TypeWriter'
@@ -10,7 +10,7 @@ export default function App() {
       <main>
         {/* component de section aqui */}
         <div>
-          <Company />
+          <Hero />
         </div>
         <div>
           {/* component de Serviço aqui */}

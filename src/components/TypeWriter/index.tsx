@@ -5,7 +5,7 @@ type WriteProps = {
   autoStart?: boolean
   loop?: boolean
 }
-export function TypeWrite({ strings, autoStart, loop, ...rest }: WriteProps) {
+export function TypeWrite({ strings, autoStart, loop, ...props }: WriteProps) {
   return (
     <Typewriter
       options={{
@@ -13,7 +13,7 @@ export function TypeWrite({ strings, autoStart, loop, ...rest }: WriteProps) {
         autoStart,
         loop,
       }}
-      {...rest}
+      {...props}
     />
   )
 }
