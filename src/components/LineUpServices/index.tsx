@@ -1,20 +1,28 @@
-export function LineUpServicesCards() {
+import Image, { StaticImageData } from 'next/image'
+type LineUpServicesCardsProps = {
+  source: StaticImageData
+  h1: string
+  p: string
+}
+
+export function LineUpServicesCards({
+  h1,
+  p,
+  source,
+}: LineUpServicesCardsProps) {
   return (
-    <div className="mt-[30px] px-5">
-      <div className="h-[350px] w-[250px] rounded-md bg-black-50 shadow-lg ">
-        <div className="flex h-[180px] flex-col items-center justify-center object-contain">
-          <img
-            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2274&q=80"
+    <div className="mt-[30px]  px-2">
+      <div className=" shadow-lg max-sm:h-[350px] max-sm:w-[250px]  max-sm:rounded-md ">
+        <div className="flex h-[175px] flex-col items-center justify-center ">
+          <Image
+            src={source}
             alt=""
-            className="rounded-t-md"
+            className="rounded-t-md max-sm:h-[175px]"
           />
         </div>
-        <div className="max-w-full px-2 py-5">
-          <h1 className="font-exo2 text-sm font-bold text-white">Concepção</h1>
-          <p className="mt-5 font-lato text-sm font-medium text-white">
-            Nesta etapa elaboramos uma lista inicial com os requisitos do
-            sistema.
-          </p>
+        <div className="max-sm:h-[230px] max-sm:bg-black-50 max-sm:px-2 max-sm:py-5">
+          <h1 className="font-exo2 text-sm font-bold text-white">{h1}</h1>
+          <p className=" mt-5 font-lato text-sm font-medium text-white">{p}</p>
         </div>
       </div>
     </div>
