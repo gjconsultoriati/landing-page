@@ -5,5 +5,5 @@ interface ContactFormProps {
 }
 
 export function ContactForm({ children }: ContactFormProps) {
-  return <div className="px-4 py-4">{children}</div>
+  return <form className="px-4 py-4">{children}</form>
 }

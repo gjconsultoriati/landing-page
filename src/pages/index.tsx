@@ -4,6 +4,7 @@ import { Services } from '@/components/Services '
 import { LineUpServicesCards } from '@/components/LineUpServices '
 import CompanyImage from '../../assets/company.png'
 import { ContactMe } from '@/components/ContactMe '
+import { TypeWrite } from '@/components/TypeWriter '
 
 export default function App() {
   return (
@@ -70,6 +71,18 @@ export default function App() {
             <div className="w-10 border-b-4 border-blue-10" />
           </div>
           <div className="mt-8 bg-black-50 max-sm:px-4">
+            <div className="py-8">
+              <h1 className="text-center font-exo2 text-3xl font-bold text-gray-900">
+                Vamos transformar seu{' '}
+                <strong className="font-exo2 font-bold text-green-900">
+                  <TypeWrite strings={['negócio?']} autoStart loop />
+                </strong>
+              </h1>
+              <p className="mt-3 text-center font-lato text-base text-white">
+                Conta pra gente como podemos te ajudar? Basta preencher o
+                formulário ao lado que entraremos em contato
+              </p>
+            </div>
             <ContactMe />
           </div>
         </div>
