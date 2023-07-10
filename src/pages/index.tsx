@@ -69,7 +69,7 @@ export default function App() {
             <h1 className="mr-3 font-lato text-sm font-bold">Contato</h1>
             <div className="w-10 border-b-4 border-blue-10" />
           </div>
-          <div className="mt-8 max-sm:px-4">
+          <div className="mt-8 bg-black-50 max-sm:px-4">
             <ContactMe />
           </div>
         </div>

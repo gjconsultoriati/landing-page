@@ -1,7 +1,21 @@
+import { Input } from '../Input'
+import { ContactForm } from './components/ContactForm'
+
 export function ContactMe() {
   return (
-    <div>
-      <h1>ContactMe</h1>
-    </div>
+    <>
+      <ContactForm>
+        <Input label="Nome" />
+      </ContactForm>
+      <ContactForm>
+        <Input label="Email" />
+      </ContactForm>
+      <ContactForm>
+        <Input label="Assunto" />
+      </ContactForm>
+      <ContactForm>
+        <Input label="Mensagem" />
+      </ContactForm>
+    </>
   )
 }
