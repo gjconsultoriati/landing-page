@@ -3,17 +3,17 @@ import { Header } from '@/components/Header/ '
 import { Services } from '@/components/Services '
 import { LineUpServicesCards } from '@/components/LineUpServices '
 import CompanyImage from '../../assets/company.png'
+import { ContactMe } from '@/components/ContactMe '
+
 export default function App() {
   return (
     <div>
       <Header />
       <main>
-        {/* component de section aqui */}
         <div>
           <Hero />
         </div>
         <div>
-          {/* component de Serviço aqui */}
           <Services />
         </div>
         {/* LineUpServices */}
@@ -65,9 +65,12 @@ export default function App() {
 
         {/* Contato */}
         <div className="max-sm:mb-[30px] max-sm:mt-[120px]">
-          <div className="flex flex-row items-center ">
+          <div className="flex flex-row items-center max-sm:px-4">
             <h1 className="mr-3 font-lato text-sm font-bold">Contato</h1>
             <div className="w-10 border-b-4 border-blue-10" />
+          </div>
+          <div className="mt-8 max-sm:px-4">
+            <ContactMe />
           </div>
         </div>
       </main>

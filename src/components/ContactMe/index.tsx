@@ -1,0 +1,7 @@
+export function ContactMe() {
+  return (
+    <div>
+      <h1>ContactMe</h1>
+    </div>
+  )
+}
