@@ -103,20 +103,7 @@ export default function App() {
             alt="Logo da empresa G.J"
           />
           <div className=" border-2 border-blue-10 " />
-          <div className="flex items-center justify-between ">
-            <div className="block py-4">
-              <GlobeAsiaAustraliaIcon
-                width={24}
-                height={24}
-                className="w-full "
-              />
-              <span className="font-lato font-medium">
-                Espirito Santo - Vila Velha
-              </span>
-              <span className="block text-center font-lato font-medium">
-                Brasil 🇧🇷
-              </span>
-            </div>
+          <div className="flex items-center justify-end py-4 ">
             <div className="flex items-center justify-end gap-2 ">
               <Link
                 href="https://api.whatsapp.com/send?phone=5527995088009&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20inova%C3%A7%C3%A3o%20tech%20para%20meu%20neg%C3%B3cio.%20%F0%9F%98%8D%F0%9F%92%BB%F0%9F%93%8C"
