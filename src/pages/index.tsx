@@ -10,7 +10,6 @@ import InstagramSvg from '../../assets/instagram.svg'
 import TwitterSvg from '../../assets/twitter.svg'
 import Link from 'next/link'
 import Image from 'next/image'
-import { GlobeAsiaAustraliaIcon } from '@heroicons/react/24/solid'
 
 export default function App() {
   return (
@@ -102,7 +101,7 @@ export default function App() {
             height={200}
             alt="Logo da empresa G.J"
           />
-          <div className=" border-2 border-blue-10 " />
+          <div className=" border-b-2 border-blue-10 " />
           <div className="flex items-center justify-end py-4 ">
             <div className="flex items-center justify-end gap-2 ">
               <Link
