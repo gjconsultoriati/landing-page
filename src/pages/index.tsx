@@ -5,6 +5,12 @@ import { LineUpServicesCards } from '@/components/LineUpServices '
 import CompanyImage from '../../assets/company.png'
 import { ContactMe } from '@/components/ContactMe '
 import { TypeWrite } from '@/components/TypeWriter '
+import Logo from '../../assets/logo.png'
+import InstagramSvg from '../../assets/instagram.svg'
+import TwitterSvg from '../../assets/twitter.svg'
+import Link from 'next/link'
+import Image from 'next/image'
+import { GlobeAsiaAustraliaIcon } from '@heroicons/react/24/solid'
 
 export default function App() {
   return (
@@ -65,7 +71,7 @@ export default function App() {
         </div>
 
         {/* Contato */}
-        <div className="max-sm:mb-[30px] max-sm:mt-[120px]">
+        <div className=" max-sm:mt-[120px]">
           <div className="flex flex-row items-center max-sm:px-4">
             <h1 className="mr-3 font-lato text-sm font-bold">Contato</h1>
             <div className="w-10 border-b-4 border-blue-10" />
@@ -87,6 +93,62 @@ export default function App() {
           </div>
         </div>
       </main>
+      <footer className="h-full w-full ">
+        <div className="h-full  bg-gray-900 px-8">
+          <Image
+            src={Logo}
+            className="ml-4 object-contain max-sm:h-36 max-sm:h-36"
+            width={200}
+            height={200}
+            alt="Logo da empresa G.J"
+          />
+          <div className=" border-2 border-blue-10 " />
+          <div className="flex items-center justify-between ">
+            <div className="block py-4">
+              <GlobeAsiaAustraliaIcon
+                width={24}
+                height={24}
+                className="w-full "
+              />
+              <span className="font-lato font-medium">
+                Espirito Santo - Vila Velha
+              </span>
+              <span className="block text-center font-lato font-medium">
+                Brasil 🇧🇷
+              </span>
+            </div>
+            <div className="flex items-center justify-end gap-2 ">
+              <Link
+                href="https://api.whatsapp.com/send?phone=5527995088009&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20inova%C3%A7%C3%A3o%20tech%20para%20meu%20neg%C3%B3cio.%20%F0%9F%98%8D%F0%9F%92%BB%F0%9F%93%8C"
+                target="_blank"
+              >
+                <span className="font-lato text-base font-medium ">
+                  +55 27 99508-8009
+                </span>
+              </Link>
+              <Link
+                href="https://www.instagram.com/gj_consultoriati/"
+                target="_blank"
+              >
+                <Image
+                  src={InstagramSvg}
+                  width={28}
+                  height={28}
+                  alt="Botão para ir ao instagram da compainha"
+                />
+              </Link>
+              <Link href="https://twitter.com/gjconsultoriati" target="_blank">
+                <Image
+                  src={TwitterSvg}
+                  width={28}
+                  height={28}
+                  alt="Botão para ir ao Twitter da compainha"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
