@@ -18,8 +18,8 @@ export const Header = () => {
       <div className="ml-10 mr-10 flex w-full items-center justify-between">
         <Image
           src={Logo}
-          width={200}
-          height={200}
+          width={150}
+          height={150}
           alt="Logo GJ consultoria em T.I"
           className="max-sm:h-30 max-sm:w-30 object-contain"
         />
