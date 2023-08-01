@@ -7,11 +7,14 @@ import { ContactMe } from '@/components/ContactMe '
 import { TypeWrite } from '@/components/TypeWriter '
 import Logo from '../../assets/logo.png'
 import InstagramSvg from '../../assets/instagram.svg'
+import whatsappSvg from '../../assets/whatsapp.svg'
 import TwitterSvg from '../../assets/twitter.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function App() {
+  const whatsappNumber =
+    'https://wa.me/5527995088009?text=Adorei%20seu%20artigo'
   return (
     <div>
       <Header />
@@ -135,6 +138,19 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Link href={whatsappNumber} target="_blank">
+        <Image
+          src={whatsappSvg}
+          alt="Imagem do whatsapp para contato"
+          style={{
+            position: 'fixed',
+            bottom: '40px',
+            right: '40px',
+            width: '60px',
+            height: '60px',
+          }}
+        />
+      </Link>
     </div>
   )
 }
