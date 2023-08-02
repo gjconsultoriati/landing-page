@@ -12,7 +12,12 @@ export function Hero() {
             e Plataformas
           </h1>
           <h2 className="text-center font-lato text-3xl font-bold text-green-900">
-            <TypeWrite strings={['Inovadoras_']} autoStart={true} loop={true} />
+            <TypeWrite
+              strings={['Inovadoras_']}
+              autoStart={true}
+              loop={true}
+              wrapperClassName="font-exo2 font-bold"
+            />
           </h2>
         </div>
         <Image

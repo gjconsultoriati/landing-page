@@ -3,11 +3,17 @@ import { Header } from '@/components/Header/ '
 import { Services } from '@/components/Services '
 import { LineUpServicesCards } from '@/components/LineUpServices '
 import CompanyImage from '../../assets/company.png'
+import RequirementsImage from '../../assets/requirements.jpeg'
 import { ContactMe } from '@/components/ContactMe '
 import { TypeWrite } from '@/components/TypeWriter '
 import Logo from '../../assets/logo.png'
 import InstagramSvg from '../../assets/instagram.svg'
+import implementsSoftware from '../../assets/implementsSoftware.jpeg'
+import testImage from '../../assets/testImage.jpeg'
+import distribution from '../../assets/distribution.jpeg'
+import suport from '../../assets/suport.jpeg'
 import whatsappSvg from '../../assets/whatsapp.svg'
+import designImage from '../../assets/designImage.jpeg'
 import TwitterSvg from '../../assets/twitter.svg'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -17,7 +23,9 @@ export default function App() {
     'https://api.whatsapp.com/send?phone=5527995088009&text=Vamos%20conversar%20sobre%20o%20meu%20aplicativo,%20plataforma%20ou%20sistema?'
   return (
     <div>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <main>
         <div>
           <Hero />
@@ -42,32 +50,32 @@ export default function App() {
             <LineUpServicesCards
               h1="Análise"
               p="Uma vez que os requisitos são coletados, eles precisam ser analisados e detalhados. Isso envolve a identificação de casos de uso, fluxos de trabalho e a criação de documentos como a especificação de requisitos"
-              source={CompanyImage}
+              source={RequirementsImage}
             />
             <LineUpServicesCards
               h1="Design"
               p=" Nesta fase, o design do software é criado. Isso pode incluir o design da arquitetura do sistema, a definição da estrutura de dados, a elaboração de diagramas de classe ou fluxogramas, entre outros."
-              source={CompanyImage}
+              source={designImage}
             />
             <LineUpServicesCards
               h1="Implementação"
               p="Aqui, os desenvolvedores começam a escrever o código do software com base no design estabelecido. Eles seguem as melhores práticas de programação e utilizam as linguagens de programação e frameworks adequados."
-              source={CompanyImage}
+              source={implementsSoftware}
             />
             <LineUpServicesCards
               h1="Testes"
               p="Após a implementação, o software é testado para garantir que ele atenda aos requisitos e funcione corretamente."
-              source={CompanyImage}
+              source={testImage}
             />
             <LineUpServicesCards
               h1="Implantação"
-              p="Depois que o software é testado e considerado pronto, ele é implantado no ambiente de produção. Isso envolve a instalação e configuração do sistema, além de garantir que todos os requisitos de hardware e software estejam atendidos."
-              source={CompanyImage}
+              p="Depois que o software é testado e considerado pronto, ele é implantado no ambiente de produção. Isso envolve a instalação e configuração do sistema, além de garantir que todos os requisitos de hardware e software estejam atendidos, e publicação do aplicativo nas lojas. (AppStore/PlayStore)"
+              source={distribution}
             />
             <LineUpServicesCards
               h1="Sustentação"
               p=" Uma vez que o software está em produção, é necessário realizar a manutenção contínua. Isso inclui a aplicação de atualizações, correções de bugs e implementação de novas funcionalidades."
-              source={CompanyImage}
+              source={suport}
             />
           </div>
         </div>
@@ -83,7 +91,12 @@ export default function App() {
               <h1 className="text-center font-exo2 text-3xl font-bold text-gray-900">
                 Vamos transformar seu{' '}
                 <strong className="font-exo2 font-bold text-green-900">
-                  <TypeWrite strings={['negócio?']} autoStart loop />
+                  <TypeWrite
+                    strings={['negócio?']}
+                    autoStart
+                    loop
+                    wrapperClassName="font-exo2 font-bold"
+                  />
                 </strong>
               </h1>
               <p className="mt-3 text-center font-lato text-base text-white">
