@@ -7,7 +7,7 @@ import flagEua from '../../../assets/flageua.svg'
 import flagBr from '../../../assets/flagbr.svg'
 export const Header = () => {
   const titles = ['Empresa', 'Serviço', 'Contato']
-  const [visibleModal, setVisibleModal] = useState(true)
+  const [visibleModal, setVisibleModal] = useState(false)
 
   function handleOpenModal() {
     setVisibleModal(!visibleModal)
