@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 export default function App() {
   const whatsappNumber =
-    'https://wa.me/5527995088009?text=Adorei%20seu%20artigo'
+    'https://api.whatsapp.com/send?phone=5527995088009&text=Vamos%20conversar%20sobre%20o%20meu%20aplicativo,%20plataforma%20ou%20sistema?'
   return (
     <div>
       <Header />
@@ -33,7 +33,7 @@ export default function App() {
           <div className="rounded max-sm:mb-20 max-sm:mt-[4px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <div className="max-sm:w-[90%]  max-sm:border-b-2 max-sm:border-gray-900 max-sm:text-center" />
           </div>
-          <div className="flex flex-row  max-sm:overflow-x-auto max-sm:overflow-y-auto max-sm:px-3">
+          <div className="flex flex-row  max-sm:overflow-x-auto max-sm:px-2">
             <LineUpServicesCards
               h1="Concepção"
               p="Nesta etapa, é importante entender as necessidades e os requisitos do software a ser desenvolvido. Isso envolve a coleta de informações dos stakeholders, como clientes e usuários finais, para determinar as funcionalidades e os objetivos do sistema."
