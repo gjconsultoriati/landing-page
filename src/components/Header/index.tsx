@@ -13,6 +13,13 @@ export const Header = () => {
     setVisibleModal(!visibleModal)
   }
 
+  function handleChangeLanguageToEnglish() {
+    alert('English language select')
+  }
+
+  function handleChangeLanguageToPortuguese() {
+    alert('Portuguese language select')
+  }
   const navLinksMenu = (titles: string[]) => {
     return (
       <>
@@ -57,23 +64,25 @@ export const Header = () => {
           <Bars3Icon className="h-10 w-10" />
         </button>
         {visibleModal && (
-          <div className="border-b-2 border-gray-800 bg-white p-4 shadow-md max-sm:fixed max-sm:right-0 max-sm:top-24 max-sm:z-10 max-sm:w-full">
+          <div className="h-full animate-fade-in-down  border-b-2 border-gray-800 bg-white p-4 shadow-md max-sm:fixed max-sm:right-0 max-sm:top-24 max-sm:z-10 max-sm:w-full">
             {navLinksMenu(titles)}
             <div className="mt-3 flex items-center justify-center gap-2">
-              <button>
+              <button onClick={handleChangeLanguageToEnglish}>
                 <Image
                   src={flagEua}
                   alt="Alterar idioma para inglês"
-                  width={22}
-                  height={22}
+                  width={25}
+                  height={25}
+                  className="hover:animate-bounce"
                 />
               </button>
-              <button>
+              <button onClick={handleChangeLanguageToPortuguese}>
                 <Image
                   src={flagBr}
                   alt="Alterar idioma para inglês"
-                  width={22}
-                  height={22}
+                  width={25}
+                  height={25}
+                  className="hover:animate-bounce"
                 />
               </button>
             </div>

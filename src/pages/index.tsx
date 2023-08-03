@@ -161,7 +161,9 @@ export default function App() {
             right: '40px',
             width: '60px',
             height: '60px',
+            zIndex: 99,
           }}
+          className="animate-bounce"
         />
       </Link>
     </div>

@@ -18,7 +18,7 @@ export function Services() {
       <div className="max-sm:flex max-sm:w-full max-sm:justify-center">
         <div className=" rounded-md border border-gray-900  bg-white drop-shadow-xl max-sm:mb-10 max-sm:flex max-sm:w-[90%]">
           <div className="flex w-[15%] items-center justify-center  max-sm:px-4 max-sm:py-5">
-            <GlobeAltIcon className="h-[40px] w-[40px] text-blue-900" />
+            <GlobeAltIcon className="h-[50px] w-[50px] text-blue-900 max-sm:h-[50px] max-sm:w-[50px]" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
             <h2 className="mb-2  font-exo2 text-lg font-bold text-green-900 max-sm:text-center">
