@@ -12,7 +12,12 @@ export function Hero() {
             e Plataformas
           </h1>
           <h2 className="text-center font-lato text-3xl font-bold text-green-900">
-            <TypeWrite strings={['Inovadoras_']} autoStart={true} loop={true} />
+            <TypeWrite
+              strings={['Inovadoras_']}
+              autoStart={true}
+              loop={true}
+              wrapperClassName="font-exo2 font-bold"
+            />
           </h2>
         </div>
         <Image
@@ -20,7 +25,7 @@ export function Hero() {
           width={200}
           height={200}
           alt="Duas pessoas com papel e lapis elaborando uma ideia"
-          className="max-sm:absolute max-sm:bottom-[10%] max-sm:left-0 max-sm:h-[450px] max-sm:w-[600px] max-sm:object-contain"
+          className="max-sm:absolute max-sm:bottom-[5%] max-sm:left-0 max-sm:h-[550px] max-sm:w-[550px] max-sm:object-contain"
         />
       </div>
     </div>
