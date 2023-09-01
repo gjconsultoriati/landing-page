@@ -129,7 +129,7 @@ export default function App() {
                 </span>
               </Link>
               <Link
-                href="https://www.instagram.com/gj_consultoriati/"
+                href="https://www.instagram.com/gjconsultoriati"
                 target="_blank"
               >
                 <Image

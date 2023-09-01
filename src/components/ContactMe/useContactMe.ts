@@ -66,8 +66,8 @@ export function useContactMe() {
       removeError('subject')
     }
   }
-  async function handleSubmit() {
-    event?.preventDefault()
+  async function handleSubmit(event: ChangeEvent<HTMLInputElement>) {
+    event.preventDefault()
     try {
       setIsSubmiting(true)
       const body = {
@@ -81,6 +81,7 @@ export function useContactMe() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': `${process.env.NEXT_PUBLIC_SITE}`,
         },
         body: JSON.stringify(body),
       })
