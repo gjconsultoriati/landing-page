@@ -81,7 +81,10 @@ export function useContactMe() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': `${process.env.NEXT_PUBLIC_SITE}`,
+          'Access-Control-Allow-Origin': `${
+            process.env.NEXT_PUBLIC_SITE ||
+            process.env.NEXT_PUBLIC_SITE_DEVELOPEMENT_ORIGIN
+          }`,
         },
         body: JSON.stringify(body),
       })
