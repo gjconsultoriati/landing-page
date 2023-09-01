@@ -66,7 +66,7 @@ export function useContactMe() {
       removeError('subject')
     }
   }
-  async function handleSubmit(event: ChangeEvent<HTMLInputElement>) {
+  async function handleSubmit() {
     event.preventDefault()
     try {
       setIsSubmiting(true)
