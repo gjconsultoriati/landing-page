@@ -67,7 +67,7 @@ export function useContactMe() {
     }
   }
   async function handleSubmit() {
-    event.preventDefault()
+    event?.preventDefault()
     try {
       setIsSubmiting(true)
       const body = {
