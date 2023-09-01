@@ -5,8 +5,8 @@ import { TypeWrite } from '../TypeWriter'
 export function Hero() {
   return (
     <div className="relative items-center max-sm:px-5 max-sm:py-[90px]">
-      <div className="bg-blue-10 max-sm:h-[780px] max-sm:px-10 max-sm:py-10">
-        <div>
+      <div className="bg-blue-900 max-sm:h-[780px] max-sm:px-10 max-sm:py-10">
+        <div className="py-11">
           <h1 className="text-center font-exo2 text-xl font-bold text-white">
             Transforme suas ideias em realidades. Desenvolvimento de Aplicativos
             e Plataformas

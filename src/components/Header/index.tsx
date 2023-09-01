@@ -59,7 +59,7 @@ export const Header = () => {
           </Link>
         ))}
       </div>
-      <div className="mr-10  lg:hidden ">
+      {/* <div className="mr-10  lg:hidden ">
         <button onClick={handleOpenModal}>
           <Bars3Icon className="h-10 w-10" />
         </button>
@@ -88,7 +88,7 @@ export const Header = () => {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
     </header>
   )
 }

@@ -21,10 +21,10 @@ export function Services() {
             <GlobeAltIcon className="h-[50px] w-[50px] text-blue-900 max-sm:h-[50px] max-sm:w-[50px]" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
-            <h2 className="mb-2  font-exo2 text-lg font-bold text-green-900 max-sm:text-center">
+            <h2 className="black-900  mb-2 font-exo2 text-lg font-bold  max-sm:text-center">
               Desenvolvimento web
             </h2>
-            <span className=" font-lato text-sm font-medium">
+            <span className=" font-lato text-sm font-semibold text-black-900">
               O desenvolvimento web é um processo de criação, implementação e
               manutenção de sites, aplicativos e outras aplicações acessíveis
               pela internet. Ele envolve uma série de tarefas e tecnologias para
@@ -41,10 +41,10 @@ export function Services() {
             <CircleStackIcon className="h-[40px] w-[40px] text-blue-900" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
-            <h2 className="mb-2   font-exo2 text-lg font-bold text-green-900 max-sm:text-center">
+            <h2 className="black-900   mb-2 font-exo2 text-lg font-bold max-sm:text-center">
               Desenvolvimento Api's
             </h2>
-            <span className=" font-lato text-sm font-medium">
+            <span className=" font-lato text-sm font-semibold text-black-900">
               O desenvolvimento de API (Interface de Programação de Aplicações)
               é um processo de criação e implementação de conjuntos de regras e
               protocolos que permitem a comunicação entre diferentes aplicações
@@ -62,10 +62,10 @@ export function Services() {
             <DevicePhoneMobileIcon className="h-[40px] w-[40px] text-blue-900" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
-            <h2 className="mb-2 font-exo2 text-lg font-bold text-green-900 max-sm:text-center">
+            <h2 className="black-900 mb-2 font-exo2 text-lg font-bold  max-sm:text-center">
               Desenvolvimento de Aplicativos
             </h2>
-            <span className="  font-lato text-sm font-medium">
+            <span className="  font-lato text-sm font-semibold text-black-900">
               O desenvolvimento de aplicativos refere-se ao processo de criação,
               design, implementação e lançamento de aplicativos de software para
               dispositivos móveis, computadores ou outros dispositivos
