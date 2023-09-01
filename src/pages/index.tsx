@@ -117,14 +117,14 @@ export default function App() {
             height={200}
             alt="Logo da empresa G.J"
           />
-          <div className=" border-b-2 border-blue-10 " />
+          <div className=" border-b-2 border-blue-900 " />
           <div className="flex items-center justify-end py-4 ">
             <div className="flex items-center justify-end gap-2 ">
               <Link
                 href="https://api.whatsapp.com/send?phone=5527995088009&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20inova%C3%A7%C3%A3o%20tech%20para%20meu%20neg%C3%B3cio.%20%F0%9F%98%8D%F0%9F%92%BB%F0%9F%93%8C"
                 target="_blank"
               >
-                <span className="font-lato text-base font-medium ">
+                <span className="font-lato text-base font-medium text-black-900 ">
                   +55 27 99508-8009
                 </span>
               </Link>
