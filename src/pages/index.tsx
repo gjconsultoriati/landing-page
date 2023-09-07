@@ -34,14 +34,14 @@ export default function App() {
           <Services />
         </div>
         {/* LineUpServices */}
-        <div className="max-sm:block">
-          <h2 className="font-exo2 text-2xl font-bold max-sm:text-center">
+        <div className="max-sm:block md:px-8">
+          <h2 className="ml-2 font-exo2 text-2xl font-bold max-sm:text-center">
             Jornada de Inovação
           </h2>
           <div className="rounded max-sm:mb-20 max-sm:mt-[4px] max-sm:flex max-sm:items-center max-sm:justify-center">
             <div className="max-sm:w-[90%]  max-sm:border-b-2 max-sm:border-gray-900 max-sm:text-center" />
           </div>
-          <div className="flex flex-row  max-sm:overflow-x-auto max-sm:px-2">
+          <div className="flex flex-row  max-sm:overflow-x-auto max-sm:px-2 md:overflow-x-auto ">
             <LineUpServicesCards
               h1="Concepção"
               p="Nesta etapa, é importante entender as necessidades e os requisitos do software a ser desenvolvido. Isso envolve a coleta de informações dos stakeholders, como clientes e usuários finais, para determinar as funcionalidades e os objetivos do sistema."
@@ -81,13 +81,15 @@ export default function App() {
         </div>
 
         {/* Contato */}
-        <div className=" max-sm:mt-[120px]">
-          <div className="flex flex-row items-center max-sm:px-4">
-            <h1 className="mr-3 font-lato text-sm font-bold">Contato</h1>
+        <div className=" max-sm:mt-[120px] md:mt-[150px]">
+          <div className="flex flex-row items-center max-sm:px-4 md:px-9">
+            <h1 className="mr-3 font-lato text-sm font-bold md:text-lg">
+              Contato
+            </h1>
             <div className="w-10 border-b-4 border-blue-10" />
           </div>
           <div className="mt-8 bg-black-50 max-sm:px-4">
-            <div className="py-8">
+            <div className="py-8 md:flex md:flex-col md:items-center md:justify-center">
               <h1 className="text-center font-exo2 text-3xl font-bold text-gray-900">
                 Vamos transformar seu{' '}
                 <strong className="font-exo2 font-bold text-green-900">
@@ -99,7 +101,7 @@ export default function App() {
                   />
                 </strong>
               </h1>
-              <p className="mt-3 text-center font-lato text-base text-white">
+              <p className="mt-3 text-center font-lato text-base text-white  md:w-[450px]  md:text-center">
                 Conta pra gente como podemos te ajudar? Basta preencher o
                 formulário ao lado que entraremos em contato
               </p>
@@ -112,7 +114,7 @@ export default function App() {
         <div className="h-full  bg-gray-900 px-8">
           <Image
             src={Logo}
-            className="ml-4 object-contain max-sm:h-36 max-sm:h-36"
+            className="ml-4 object-contain max-sm:h-36 "
             width={200}
             height={200}
             alt="Logo da empresa G.J"
