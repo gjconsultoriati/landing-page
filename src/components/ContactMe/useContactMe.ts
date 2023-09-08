@@ -42,7 +42,7 @@ export function useContactMe() {
     }
   }
 
-  function handleChangeMessage(event: ChangeEvent<HTMLInputElement>) {
+  function handleChangeMessage(event: ChangeEvent<HTMLTextAreaElement>) {
     setMessage(event.target.value)
 
     if (!event.target.value) {

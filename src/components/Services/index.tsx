@@ -19,7 +19,7 @@ export function Services() {
 
       <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex md:items-center md:justify-center">
         <div className="rounded-md border-2 border-gray-900  bg-white drop-shadow-xl transition-all ease-in hover:border-green-900  max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
-          <div className="flex w-[15%] items-center justify-center  max-sm:px-4 max-sm:py-5">
+          <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <GlobeAltIcon className="h-[50px] w-[50px] text-blue-900 max-sm:h-[50px] max-sm:w-[50px]" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
@@ -39,7 +39,7 @@ export function Services() {
 
       <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex  md:items-center md:justify-center">
         <div className=" rounded-md border-2 border-gray-900 bg-white  drop-shadow-xl transition-all ease-in hover:border-green-900 max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
-          <div className="flex w-[15%] items-center justify-center  max-sm:px-4 max-sm:py-5">
+          <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <CircleStackIcon className="h-[40px] w-[40px] text-blue-900" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">
@@ -60,7 +60,7 @@ export function Services() {
 
       <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-20 md:flex  md:items-center md:justify-center">
         <div className=" rounded-md border-2 border-gray-900  bg-white drop-shadow-xl transition-all ease-in hover:border-green-900 max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
-          <div className="flex w-[15%] items-center justify-center  max-sm:px-4 max-sm:py-5">
+          <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <DevicePhoneMobileIcon className="h-[40px] w-[40px] text-blue-900" />
           </div>
           <div className="w-[80%] px-4 py-4 max-sm:items-center">

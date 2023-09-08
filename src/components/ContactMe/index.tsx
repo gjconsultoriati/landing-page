@@ -1,4 +1,5 @@
 import { Input } from '../Input'
+import { InputArea } from '../TextArea'
 import { ContactForm } from './components/ContactForm'
 import { Spinner } from './components/Spinner'
 import { useContactMe } from './useContactMe'
@@ -55,7 +56,7 @@ export function ContactMe() {
         />
       </ContactForm>
       <ContactForm error={getErrorMessageByFieldName('message')}>
-        <Input
+        <InputArea
           label="Mensagem"
           value={message}
           onChange={handleChangeMessage}
