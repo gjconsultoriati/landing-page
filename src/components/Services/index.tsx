@@ -6,7 +6,7 @@ import {
 
 export function Services() {
   return (
-    <div className="max-sm:mt-[120px]">
+    <div className="max-sm:mt-[120px]" id="services">
       <div className="max-sm:block md:mb-20 md:items-center md:justify-center md:text-center">
         <h2 className="font-exo2 text-2xl font-bold max-sm:text-center">
           O que nós oferecemos
