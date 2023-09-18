@@ -34,7 +34,7 @@ export default function App() {
           <Services />
         </div>
         {/* LineUpServices */}
-        <div className="max-sm:block md:px-8" id="inovation">
+        <div className="max-sm:block md:px-8">
           <h2 className="ml-2 font-exo2 text-2xl font-bold max-sm:text-center">
             Jornada de Inovação
           </h2>
