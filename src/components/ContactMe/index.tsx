@@ -22,7 +22,7 @@ export function ContactMe() {
   } = useContactMe()
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} id="contact">
       <ContactForm error={getErrorMessageByFieldName('name')}>
         <Input
           label="Nome"
