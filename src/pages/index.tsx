@@ -69,7 +69,7 @@ export default function App() {
         <video autoPlay muted loop className="">
           <source src={'video/movie.mp4'} />
         </video>
-        <div className="absolut e bottom-0 left-0 right-0 top-0 z-10 m-auto flex h-[60px] w-[1080px] flex-col items-center justify-center">
+        <div className="absolute bottom-0 left-0 right-0 top-0 z-10 m-auto flex h-[60px] w-[1080px] flex-col items-center justify-center">
           <h1 className="text-center font-exo2 text-[42px] font-bold text-white">
             Transforme suas ideias em realidades. Desenvolvimento de Aplicativos
             e Plataformas
