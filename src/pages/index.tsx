@@ -102,9 +102,9 @@ export default function App() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center max-sm:block md:px-8">
           <div
-            className="w-[1280px] items-center justify-center max-sm:block md:px-8"
+            className="items-center justify-center sm:w-[1280px] md:w-[1280px] "
             id="inovation"
           >
             <h2 className="ml-2 text-center font-exo2 text-2xl font-bold max-sm:text-center">
@@ -153,17 +153,19 @@ export default function App() {
           </div>
         </div>
 
-        {/* Contato */}
-        <div className="flex items-center justify-center">
-          <div className=" w-[1280px] items-center justify-center  max-sm:mt-[120px] md:mt-[150px]">
+        {/* Conwtato */}
+
+        {/* <div className="flex items-center justify-center  max-sm:mt-[120px]  md:mt-[150px]">
+          <div className=" w-[1280px] items-center justify-center max-sm:mt-[120px] md:mt-[150px]">
             <div className="flex flex-row items-center max-sm:px-4 md:px-9">
               <h1 className="mr-3 font-lato text-sm font-bold md:text-lg">
                 Contato
               </h1>
               <div className="w-10 border-b-4 border-blue-900" />
             </div>
-            <div className=" flex w-full items-center justify-between rounded  bg-black-50 max-sm:px-4">
-              <div className=" flex w-[600px] items-center py-8 md:flex md:flex-col md:items-center md:justify-center">
+
+            <div className="flex w-full items-center justify-between rounded bg-black-50 max-sm:flex max-sm:flex-col max-sm:px-4 sm:flex ">
+              <div className=" flex w-[600px] items-center py-8 max-sm:flex max-sm:flex-col md:flex md:flex-col md:items-center md:justify-center">
                 <h1 className="text-center font-exo2 text-3xl font-bold text-gray-900">
                   Vamos transformar seu{' '}
                   <strong className="font-exo2 font-bold text-green-900">
@@ -175,12 +177,43 @@ export default function App() {
                     />
                   </strong>
                 </h1>
-                <p className="mt-3 text-center font-lato text-base text-white  md:w-[450px]  md:text-center">
+                <p className="mt-3 text-center font-lato text-base text-white  max-md:w-[450px]   md:text-center">
                   Conta pra gente como podemos te ajudar? Basta preencher o
                   formulário ao lado que entraremos em contato
                 </p>
               </div>
-              <div className="mt-[10%] w-[640px] px-10">
+              <div className="mt-[10%] w-[640px] px-10 sm:flex sm:flex-col">
+                <ContactMe />
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <div className=" flex items-center justify-center">
+          <div className=" items-center justify-center max-sm:mt-[120px] md:mt-[150px] lg:w-[1280px]">
+            <div className="flex flex-row items-center max-sm:px-4">
+              <h1 className="mr-3 font-lato text-sm font-bold">Contato</h1>
+              <div className="w-10 border-b-4 border-blue-10" />
+            </div>
+
+            <div className="mt-8 rounded bg-black-50 max-sm:px-4 lg:flex lg:w-full lg:items-center lg:justify-between lg:px-[20px] ">
+              <div className="py-8 lg:flex lg:w-[640px] lg:flex-col lg:items-center lg:justify-center ">
+                <h1 className="text-center font-exo2 text-3xl font-bold text-gray-900 lg:w-[500px]">
+                  Vamos transformar seu{' '}
+                  <strong className="font-exo2 font-bold text-green-900">
+                    <TypeWrite
+                      strings={['negócio?']}
+                      autoStart
+                      loop
+                      wrapperClassName="font-exo2 font-bold"
+                    />
+                  </strong>
+                </h1>
+                <p className="mt-3 text-center font-lato text-base text-white ">
+                  Conta pra gente como podemos te ajudar? Basta preencher o
+                  formulário ao lado que entraremos em contato
+                </p>
+              </div>
+              <div className="lg:flex lg:w-full lg:flex-col lg:px-[10px]">
                 <ContactMe />
               </div>
             </div>
@@ -188,7 +221,7 @@ export default function App() {
         </div>
       </main>
       <footer className=" flex items-center justify-center">
-        <div className="flex h-full w-[1280px]  items-center bg-gray-900 px-8">
+        <div className="flex h-full w-[1280px] items-center bg-gray-900 px-8">
           <Image
             src={Logo}
             className="ml-4 object-contain max-sm:h-36 "
