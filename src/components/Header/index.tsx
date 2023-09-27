@@ -29,8 +29,8 @@ export const Header = () => {
   }
 
   return (
-    <header className="flex h-24 w-full  items-center justify-end border-b-2 border-gray-800 bg-white  shadow-xl max-sm:fixed max-sm:z-10">
-      <div className="ml-10 mr-10 flex w-full items-center justify-between">
+    <header className="flex h-24 w-full items-center  justify-end border-b-2 border-gray-800 bg-white shadow-xl  max-sm:fixed max-sm:z-10 lg:hidden">
+      <div className="ml-10 mr-10 flex w-full items-center justify-between ">
         <Image
           src={Logo}
           width={150}
@@ -72,7 +72,7 @@ export const Header = () => {
                 CONTATO
               </p>
             </Link>
-            <div className="mt-3 flex items-center justify-center gap-2">
+            {/* <div className="mt-3 flex items-center justify-center gap-2">
               <button onClick={handleChangeLanguageToEnglish}>
                 <Image
                   src={flagEua}
@@ -91,7 +91,7 @@ export const Header = () => {
                   className="hover:animate-bounce"
                 />
               </button>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
