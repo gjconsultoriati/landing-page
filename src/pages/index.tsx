@@ -101,7 +101,6 @@ export default function App() {
             <Services />
           </div>
         </div>
-        {/* LineUpServices */}
 
         <div className="flex items-center justify-center">
           <div
