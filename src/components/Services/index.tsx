@@ -6,10 +6,13 @@ import {
 
 export function Services() {
   return (
-    <div className="max-sm:mt-[120px]" id="services">
-      <div className="max-sm:block md:mb-20 md:items-center md:justify-center md:text-center">
+    <div id="services">
+      <div
+        className="max-sm:block md:mb-20 md:items-center md:justify-center md:text-center"
+        id="services"
+      >
         <h2 className="font-exo2 text-2xl font-bold max-sm:text-center">
-          O que nós oferecemos
+          O QUE NÓS OFERECEMOS
         </h2>
 
         <div className="rounded max-sm:mb-20 max-sm:mt-[4px] max-sm:flex max-sm:items-center max-sm:justify-center md:flex md:items-center md:justify-center ">
@@ -17,7 +20,7 @@ export function Services() {
         </div>
       </div>
 
-      <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex md:items-center md:justify-center">
+      <div className=" max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex md:items-center md:justify-center">
         <div className="rounded-md border-2 border-gray-900  bg-white drop-shadow-xl transition-all ease-in hover:border-green-900  max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
           <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <GlobeAltIcon className="h-[50px] w-[50px] text-blue-900 max-sm:h-[50px] max-sm:w-[50px]" />
@@ -37,7 +40,7 @@ export function Services() {
         </div>
       </div>
 
-      <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex  md:items-center md:justify-center">
+      <div className=" max-sm:flex max-sm:w-full max-sm:justify-center md:mb-5 md:flex  md:items-center md:justify-center">
         <div className=" rounded-md border-2 border-gray-900 bg-white  drop-shadow-xl transition-all ease-in hover:border-green-900 max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
           <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <CircleStackIcon className="h-[40px] w-[40px] text-blue-900" />
@@ -58,7 +61,7 @@ export function Services() {
         </div>
       </div>
 
-      <div className="hover:animate-fade-in-down max-sm:flex max-sm:w-full max-sm:justify-center md:mb-20 md:flex  md:items-center md:justify-center">
+      <div className=" max-sm:flex max-sm:w-full max-sm:justify-center md:mb-20 md:flex  md:items-center md:justify-center">
         <div className=" rounded-md border-2 border-gray-900  bg-white drop-shadow-xl transition-all ease-in hover:border-green-900 max-sm:mb-10 max-sm:flex max-sm:w-[90%] md:flex md:w-[90%] md:items-center md:justify-center">
           <div className="flex w-[20%] items-center justify-center  max-sm:px-4 max-sm:py-5">
             <DevicePhoneMobileIcon className="h-[40px] w-[40px] text-blue-900" />
