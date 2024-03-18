@@ -1,34 +1,42 @@
-import CompanyImage from '../../../assets/company.png'
 import Image from 'next/image'
-import { TypeWrite } from '../TypeWriter'
+import HeroImg from '../../../assets/hero.png'
+import mouseDownIcon from '../../../assets/mouse_down.svg'
+import TelegramIcon from '../../../assets/telegram.svg'
 
 export function Hero() {
   return (
-    <div className="relative items-center py-10 max-sm:px-5 max-sm:py-[90px] ">
-      <div className="flex justify-between bg-blue-900 max-sm:h-[780px] max-sm:px-10 max-sm:py-10  md:h-[250px] md:w-[600px] lg:invisible ">
-        <div className="w-[400px] py-11">
-          <h1 className="text-center font-exo2 text-xl font-bold text-white">
-            Transforme suas ideias em realidades. Desenvolvimento de Aplicativos
-            e Plataformas
-          </h1>
-          <h2 className="text-center font-lato text-3xl font-bold text-green-900">
-            <TypeWrite
-              strings={['Inovadoras_']}
-              autoStart={true}
-              loop={true}
-              wrapperClassName="font-exo2 font-bold"
+    <>
+      <main className="flex w-full justify-center">
+        <div className="flex w-full max-w-[1120px] items-center justify-between">
+          <div className="max-w-[448px]">
+            <h1 className="font-exo2 text-3xl font-bold text-blue-900">
+              Transforme suas Ideias em Realidade. Desenvolvimento de
+              Aplicativos e Plataformas{' '}
+              <span className="font-exo2 text-green-900 ">Inovadoras_</span>
+            </h1>
+            <button className=" hover:duration-400 mt-10 flex gap-2 rounded-md  bg-blue-900 px-3 py-3 hover:bg-blue-800 hover:transition-colors hover:ease-in-out">
+              <span className="font-exo2 font-bold text-white">
+                Entre em Contato
+              </span>
+              <Image src={TelegramIcon} alt="Icon to phone" />
+            </button>
+          </div>
+          <div>
+            <Image
+              src={HeroImg}
+              alt="imagem duas pessoas com computador e graficos"
             />
-          </h2>
+          </div>
         </div>
+      </main>
+      <div className="mt-10 flex flex-col items-center justify-center">
         <Image
-          src={CompanyImage}
-          width={200}
-          height={200}
-          alt="Duas pessoas com papel e lapis elaborando uma ideia"
-          className="
-          max-sm:absolute max-sm:bottom-[5%] max-sm:left-0 max-sm:h-[550px] max-sm:w-[550px] max-sm:object-contain md:absolute md:bottom-[20%] md:right-0 md:w-[300px]"
+          src={mouseDownIcon}
+          alt="arrowdown icon"
+          width={50}
+          height={50}
         />
       </div>
-    </div>
+    </>
   )
 }
