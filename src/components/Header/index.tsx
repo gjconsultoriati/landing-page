@@ -1,30 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import Logo from '../../../assets/logo.png'
 import { DropmenuLangauge } from '../DropMenuLanguage'
 
 export const Header = () => {
-  const [visibleModal, setVisibleModal] = useState(false)
-
-  function handleOpenModal() {
-    setVisibleModal(!visibleModal)
-  }
-  const scrollToElement = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setVisibleModal(false)
-    }
-  }
-
-  function handleChangeLanguageToEnglish() {
-    alert('English language select')
-  }
-
-  function handleChangeLanguageToPortuguese() {
-    alert('Portuguese language select')
-  }
+  // const scrollToElement = (id: string) => {
+  //   const element = document.getElementById(id)
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' })
+  //     setVisibleModal(false)
+  //   }
+  // }
 
   return (
     <header className="flex h-[120px] w-full items-center justify-center border border-b-2 border-gray-900">
