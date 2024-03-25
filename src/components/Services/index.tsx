@@ -23,11 +23,11 @@ export function Services() {
         </div>
 
         <div className="grid grid-cols-2 gap-8">
-          <div className="flex max-h-[302px] max-w-[234px] flex-col">
+          <div className="flex h-[298px] max-h-[302px] max-w-[234px] flex-col justify-between ">
             <div className="mb-3">
               <Image src={iconCircuit} alt="Icon azul circuito" />
             </div>
-            <div>
+            <div className="flex h-full flex-col justify-center">
               <strong className="font-lato text-[26px] text-blue-900">
                 Desenvolvimento de aplicativos Apps/web
               </strong>
@@ -38,26 +38,26 @@ export function Services() {
               </p>
             </div>
           </div>
-          <div className="flex max-h-[302px] max-w-[234px] flex-col">
+          <div className="flex  h-[298px] max-w-[234px] flex-col justify-between  ">
             <div className="mb-3">
-              <Image src={iconDesign} alt="Icon azul circuito" />
+              <Image src={iconDesign} alt="Icon icon Design verde" />
             </div>
-            <div>
-              <strong className="font-lato text-[26px] text-blue-900">
+            <div className="flex h-full flex-col justify-center">
+              <strong className=" flex h-[92px] flex-col justify-center font-lato text-[26px] text-blue-900">
                 UX/UI Design
               </strong>
-              <p className="mt-3 overflow-y-auto text-justify font-lato text-base text-black-900">
+              <p className="mt-3 flex h-[170px] items-end  overflow-y-auto  text-justify font-lato text-base text-black-900">
                 Um layout limpo e moderno com elementos visuais atraentes para
                 capturar a atenção do usuário. Utilizaremos das melhores
                 estratégias para criarmos um produto incrível.
               </p>
             </div>
           </div>
-          <div className="mt-16 flex max-h-[302px] max-w-[234px] flex-col">
+          <div className="mt-16 flex max-h-[302px] max-w-[234px] flex-col justify-between ">
             <div className="mb-3">
               <Image src={IconIdea} alt="Icon azul ideia" />
             </div>
-            <div>
+            <div className="flex h-full flex-col justify-center">
               <strong className="font-lato text-[26px] text-blue-900">
                 Consultoria em Tecnologia
               </strong>
@@ -68,11 +68,11 @@ export function Services() {
               </p>
             </div>
           </div>
-          <div className="mt-16 flex max-h-[302px] max-w-[234px] flex-col">
+          <div className="mt-16 flex max-h-[302px] max-w-[234px] flex-col justify-between ">
             <div className="mb-3">
               <Image src={IconOtherServices} alt="Icon azul ideia" />
             </div>
-            <div>
+            <div className="flex h-full flex-col justify-center">
               <strong className="font-lato text-[26px] text-blue-900">
                 Outros Serviços
               </strong>
