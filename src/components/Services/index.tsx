@@ -8,7 +8,7 @@ import phoroService from '../../../assets/photoService.jpg'
 
 export function Services() {
   return (
-    <section className="mb-[300px] mt-40 flex flex-col items-center justify-center">
+    <section className="mb-[160px] mt-40 flex flex-col items-center justify-center">
       <h1 className="mb-3 font-exo2 text-3xl font-bold text-black-900">
         Nossos Serviços
       </h1>
