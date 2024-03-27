@@ -86,7 +86,6 @@ export default function App() {
             <span className="font-exo2 font-bold text-blue-900">
               Entre em Contato
             </span>
-            {/* Supondo que você tenha uma imagem chamada TelegramIconBlue */}
             <Image src={TelegramIconBlue} alt="Icon to phone" />
           </button>
         </div>
