@@ -1,8 +1,8 @@
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
 import Image from 'next/image'
 import { useState } from 'react'
-import FlagBrazil from '../../../assets/flagbr.svg'
-import FlagEUA from '../../../assets/flageua.svg'
+import FlagBrazil from '../../../public/assets/flagbr.svg'
+import FlagEUA from '../../../public/assets/flageua.svg'
 
 export function DropmenuLangauge() {
   const [flagSelect, setFlagSelected] = useState('pt')

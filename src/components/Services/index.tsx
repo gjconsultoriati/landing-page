@@ -1,10 +1,10 @@
 import Image from 'next/image'
-import IconIdea from '../../../assets/IconIdea.png'
-import IconOtherServices from '../../../assets/IconOtherServices.png'
-import gradient from '../../../assets/gradient.svg'
-import iconCircuit from '../../../assets/iconCircuit.png'
-import iconDesign from '../../../assets/iconDesign.png'
-import phoroService from '../../../assets/photoService.jpg'
+import IconIdea from '../../../public/assets/IconIdea.png'
+import IconOtherServices from '../../../public/assets/IconOtherServices.png'
+import gradient from '../../../public/assets/gradient.svg'
+import iconCircuit from '../../../public/assets/iconCircuit.png'
+import iconDesign from '../../../public/assets/iconDesign.png'
+import phoroService from '../../../public/assets/photoService.jpg'
 
 export function Services() {
   return (

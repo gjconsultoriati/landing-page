@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import HeroImg from '../../../assets/hero.png'
-import mouseDownIcon from '../../../assets/mouse_down.svg'
-import TelegramIcon from '../../../assets/telegram.svg'
+import HeroImg from '../../../public/assets/hero.png'
+import mouseDownIcon from '../../../public/assets/mouse_down.svg'
+import TelegramIcon from '../../../public/assets/telegram.svg'
 
 export function Hero() {
   return (

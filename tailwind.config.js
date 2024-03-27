@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        // prettier-ignore
+        'background': "url('/assets/background.png')",
+      },
       colors: {
         blue: {
           900: '#214ae7',

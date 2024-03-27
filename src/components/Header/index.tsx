@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo from '../../../assets/logo.png'
+import Logo from '../../../public/assets/logo.png'
 import { DropmenuLangauge } from '../DropMenuLanguage'
 
 export const Header = () => {
@@ -39,7 +39,7 @@ export const Header = () => {
             className="rounded-xl bg-blue-900 p-4 hover:bg-blue-800 hover:transition-all "
             href="services"
           >
-            <p className="font-exo2 font-bold text-white ">Contato</p>
+            <p className="font-exo2 font-bold text-white">Contato</p>
           </Link>
           <DropmenuLangauge />
         </div>
